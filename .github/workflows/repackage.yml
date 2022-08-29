@@ -28,7 +28,7 @@ jobs:
         with:
           repository: cujo30227/bower-js-stellar-sdk
           fetch-depth: 0
-          ref: masterwrite
+          ref: master
           path: bowerwrite
 
       # if this check fails then the job doesn't need to proceed
@@ -68,4 +68,4 @@ jobs:
           git add .
           git commit -m $TAG
           git tag -a $TAG -m $TAG
-          git push --atomic origin masterwrite "$TAG"
+          git push --atomic origin master "$TAG"
