@@ -1,4 +1,8 @@
 name: Package SDK for Bower
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * *'  # daily @ noon
 
 jobs:
   build-and-deploy:
