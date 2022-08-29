@@ -57,7 +57,7 @@ jobs:
         run: |
           yarn install
           yarn
-          cp dist/* bower/
+          cp dist/* bowerwrite/
 
       - name: Publish package
         run: |
