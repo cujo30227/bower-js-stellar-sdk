@@ -18,7 +18,7 @@ jobs:
       - name: Checkout Bower
         uses: actions/checkout@v2
         with:
-          repository: cujo30227/bower-js-stellar-sdk
+          repository: stellar/bower-js-stellar-sdk
           fetch-depth: 0
           ref: master
           path: bower
