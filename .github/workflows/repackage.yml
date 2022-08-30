@@ -1,8 +1,14 @@
 name: Package SDK for Bower
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 12 * * *'  # daily @ noon
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'
+    
 
 jobs:
   build-and-deploy:
